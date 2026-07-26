@@ -1,0 +1,41 @@
+@media (min-width: 768px) {
+  /* Distribución de la Barra de Acciones */
+  .herramientas-acciones {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .buscador {
+    flex: 1;
+    max-width: 450px;
+  }
+
+  /* Listado de herramientas como fila extendida */
+  .fila-herramienta {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+  }
+
+  /* Formularios en 2 columnas */
+  #form-editar-herramienta,
+  #form-nueva-herramienta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .campo:nth-child(4), /* Textarea / Notas */
+  .detalle-footer,
+  .modal-footer {
+    grid-column: span 2;
+  }
+
+  .historial-item {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
